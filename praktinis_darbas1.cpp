@@ -28,6 +28,23 @@ int main()
     skaiciavimas(veiksmas, valiuta, suma, rezultatas);
     rezultatu(veiksmas, valiuta, suma, rezultatas);
 
+    while (veiksmas != 4)
+    {
+        skaitymas(veiksmas, valiuta, suma);
+
+        if (veiksmas >= 1 && veiksmas <= 3 &&
+            valiuta >= 1 && valiuta <= 3 &&
+            suma >= 0)
+        {
+            skaiciavimas(veiksmas, valiuta, suma, rezultatas);
+            rezultatu(veiksmas, valiuta, suma, rezultatas);
+        }
+
+        cout << endl;
+    }
+
+    cout << "Programa baigta!" << endl;
+
     return 0;
 }
 
